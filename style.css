@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
+
+:root {
+  --color-primary: #6a003b;
+  --color-secondary: #f27f32;
+  --color-text: #f9f3f6;
+  --color-text-light: #bca8cb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  /* background-image: linear-gradient(
+    to right top,
+    var(--color-primary) 50%,
+    var(--color-secondary)
+  ); */
+  background: radial-gradient(
+    82.95% 267.19% at 97.33% 4.12%,
+    #f27f32 0%,
+    #9f0437 42.88%,
+    #6a003b 100%
+  );
+}
+
+.header-icon {
+  height: 44px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  color: var(--color-text);
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.content h1 {
+  font-size: 55px;
+  margin-left: -2px;
+}
+
+.content h2 {
+  font-size: 34px;
+  font-weight: 100;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.content h5 {
+  margin-top: 10px;
+  color: var(--color-text-light);
+  font-size: 18px;
+}
+
+.content h5 a {
+  color: inherit;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.dash {
+  margin: 0 10px;
+}
+
+.phone {
+  color: var(--color-text);
+  font-weight: lighter;
+}
+
+p {
+  color: var(--color-text-light);
+  margin-top: 20px;
+}
+
+h4 {
+  margin-top: 5px;
+  font-weight: lighter;
+  color: var(--color-text-light);
+}
+
+.links {
+  display: inline-block;
+  width: 200px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.icon:first-child {
+  margin-left: 0;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* column 2 */
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 35ch;
+  padding: 20px 40px;
+  background: radial-gradient(
+        109.8% 104.06% at 83.54% 106.14%,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 86.18%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        65.28% 65.28% at 26.39% 20.83%,
+        rgba(255, 255, 255, 0.413) 0%,
+        rgba(255, 255, 255, 0) 69.79%,
+        rgba(255, 255, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #d4e0fc;
+  box-shadow: 4px 10px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 109px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.row:last-child {
+  margin-top: 50px;
+}
+
+.icon-row {
+  height: 40px;
+  width: 40px;
+}
